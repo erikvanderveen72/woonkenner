@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   description: 'Vergelijk hypotheken, bereken je woningwaarde, ontdek verduurzamingssubsidies en check huurprijzen. Onafhankelijk en 100% gratis.',
   keywords: ['hypotheek vergelijken', 'woningwaarde berekenen', 'verduurzaming subsidie', 'huurprijs berekenen', 'wonen nederland 2026'],
   metadataBase: new URL('https://woonkenner.nl'),
-  openGraph: { type: 'website', locale: 'nl_NL', url: 'https://woonkenner.nl', siteName: 'Woonkenner.nl' },
-  twitter: { card: 'summary_large_image' },
+  openGraph: { type: 'website', locale: 'nl_NL', url: 'https://woonkenner.nl', siteName: 'Woonkenner.nl', images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Woonkenner.nl - Jouw Gids voor Wonen in Nederland' }] },
+  twitter: { card: 'summary_large_image', images: ['/og-image.png'] },
   alternates: { canonical: 'https://woonkenner.nl', languages: { 'nl-NL': 'https://woonkenner.nl' } },
   robots: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large' as const },
   verification: {

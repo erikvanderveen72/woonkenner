@@ -11,11 +11,11 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: 'Huurprijzen 2026 - Check & Vergelijk per Regio | Woonkenner.nl',
-  description: 'Bekijk de gemiddelde huurprijzen per regio in Nederland 2026. Vergelijk huurprijzen van appartementen en woningen. Bereken je maximale huurprijs op basis van het Woningwaarderingsstelsel.',
+  description: 'Bekijk gemiddelde huurprijzen per regio in Nederland 2026. Vergelijk huurprijzen en bereken je maximale huur op basis van het Woningwaarderingsstelsel.',
   keywords: ['huurprijs', 'huurprijzen 2026', 'huur vergelijken', 'woningwaarderingsstelsel', 'sociale huur', 'middenhuur'],
   openGraph: {
     title: 'Huurprijzen 2026 - Check & Vergelijk per Regio | Woonkenner.nl',
-    description: 'Vergelijk huurprijzen in Nederlandse regio\'s. Berekenen maximale huurprijs en inzicht in sociale vs vrije sector.',
+    description: 'Vergelijk huurprijzen in Nederlandse regio\'s. Bereken je maximale huurprijs en krijg inzicht in sociale vs vrije sector.',
     type: 'website',
     url: 'https://woonkenner.nl/huurprijzen',
   },

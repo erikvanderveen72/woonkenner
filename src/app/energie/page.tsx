@@ -31,11 +31,11 @@ export default function EnergiePage() {
     },
     {
       question: 'Hoe vaak moet een energielabel worden vernieuwd?',
-      answer: 'Een energielabel is geldig voor 10 jaar. Je moet een nieuw energielabel aanvragen als je grote verbouwingen doet of als het label is verlopen. Bij aankoop is een actueel label verplicht.',
+      answer: 'Een energielabel is geldig voor 10 jaar. Je moet een nieuw energielabel aanvragen als je grote verbouwingen doet aan de woning of als het label is verlopen. Bij aankoop is een actueel label verplicht.',
     },
     {
       question: 'Bespaar ik echt geld met een beter energielabel?',
-      answer: 'Ja, besparingen zijn reëel. Een woning met label A bespaard gemiddeld €300-600 per jaar op energie vergeleken met label D. Over 10 jaar kan dit al snel €3.000-6.000 betekenen, plus stijging van huiswaarde.',
+      answer: 'Ja, besparingen zijn reëel. Een woning met label A bespaart gemiddeld €300-600 per jaar op energie vergeleken met label D. Over 10 jaar kan dit al snel €3.000-6.000 betekenen, plus stijging van huiswaarde.',
     },
     {
       question: 'Welke subsidies zijn er voor verduurzaming in 2026?',

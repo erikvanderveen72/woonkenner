@@ -178,7 +178,7 @@ export default function WoningwaardeCalculator() {
         {/* Info Box */}
         <div className="bg-amber-50 rounded-lg p-4 border border-amber-100">
           <p className="text-xs text-amber-800">
-            <strong>Hoe werkt het?</strong> Deze calculator bereken een schatting door de gemiddelde m²-prijs van je regio aan te passen voor de karakteristieken van jouw woning.
+            <strong>Hoe werkt het?</strong> Deze calculator berekent een schatting door de gemiddelde m²-prijs van je regio aan te passen voor de karakteristieken van jouw woning.
           </p>
         </div>
       </div>

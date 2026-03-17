@@ -6,7 +6,7 @@ import FAQSchema from '@/components/FAQSchema';
 
 export const metadata: Metadata = {
   title: 'Woningwaarde Bepalen 2026 - Gratis Schatting | Woonkenner.nl',
-  description: 'Bepaal de waarde van jouw woning in 2026. Gratis woningwaarde calculator met actuele prijzens uit Q1 2026 voor alle regio\'s in Nederland.',
+  description: 'Bepaal de waarde van jouw woning in 2026. Gratis woningwaarde calculator met actuele prijzen uit Q1 2026 voor alle regio\'s in Nederland.',
 };
 
 export const revalidate = 3600;
@@ -23,7 +23,7 @@ const formatCurrency = (value: number) => {
 const faqItems = [
   {
     question: 'Hoe bepaal ik de waarde van mijn woning?',
-    answer: 'De waarde van een woning wordt bepaald door verschillende factoren: de locatie, grootte, staat van onderhoud, bouwjaar, energielabel en marktomstandigheden. Onze calculator gebruikmaakt van actuele marktgegevens uit Q1 2026 om een realistische schatting te geven.',
+    answer: 'De waarde van een woning wordt bepaald door verschillende factoren: de locatie, grootte, staat van onderhoud, bouwjaar, energielabel en marktomstandigheden. Onze calculator maakt gebruik van actuele marktgegevens uit Q1 2026 om een realistische schatting te geven.',
   },
   {
     question: 'Wat is het verschil tussen WOZ-waarde en marktwaarde?',
@@ -43,7 +43,7 @@ const faqItems = [
   },
   {
     question: 'Hoe vaak worden de marktprijzen bijgewerkt?',
-    answer: 'Onze gegevens worden regelmatig bijgewerkt op basis van actuele CBS en Kadaster cijfers. De huidigende data is van Q1 2026. Voor real-time prijsveranderingen raden we aan een makelaar te raadplegen.',
+    answer: 'Onze gegevens worden regelmatig bijgewerkt op basis van actuele CBS- en Kadaster-cijfers. De huidige data is van Q1 2026. Voor real-time prijsveranderingen raden we aan een makelaar te raadplegen.',
   },
 ];
 
@@ -180,12 +180,12 @@ export default function WoningwaardePage() {
             Onze calculator geeft een snelle schatting. Voor een nauwkeurige waardebepaling raden we een professionele taxatie aan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-stone-100 transition-colors">
+            <a href="https://www.funda.nl/makelaars/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-stone-100 transition-colors">
               Makelaar Opzoeken
-            </button>
-            <button className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
-              Meer Info
-            </button>
+            </a>
+            <a href="/hypotheek" className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+              Hypotheek Berekenen
+            </a>
           </div>
         </div>
       </section>
