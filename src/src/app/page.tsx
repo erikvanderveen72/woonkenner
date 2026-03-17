@@ -6,7 +6,9 @@ import {
   Zap,
   Key,
   Leaf,
-  Lightbulb,
+  SunDim,
+  Layers,
+  Frame,
   Award,
   Banknote,
   TrendingDown,
@@ -90,12 +92,28 @@ export default function HomePage() {
       gradient: 'from-green-500 to-green-600',
     },
     {
-      icon: Lightbulb,
-      title: 'Tips & Advies',
+      icon: SunDim,
+      title: 'Raamdecoratie',
       description:
-        'Praktische tips en advies voor betere woonkeuzes en kostenbesparing.',
-      href: '#',
-      gradient: 'from-orange-500 to-orange-600',
+        'Vergelijk gordijnen, jaloezieën, shutters en rolgordijnen op prijs en kwaliteit.',
+      href: '/raamdecoratie',
+      gradient: 'from-indigo-500 to-violet-600',
+    },
+    {
+      icon: Layers,
+      title: 'Vloeren',
+      description:
+        'PVC, laminaat, parket of tegels? Vergelijk vloertypen op prijs en duurzaamheid.',
+      href: '/vloeren',
+      gradient: 'from-amber-500 to-orange-600',
+    },
+    {
+      icon: Frame,
+      title: 'Kozijnen',
+      description:
+        'Kunststof, aluminium of hout? Vergelijk kozijnen op isolatie, prijs en levensduur.',
+      href: '/kozijnen',
+      gradient: 'from-sky-500 to-blue-600',
     },
   ];
 

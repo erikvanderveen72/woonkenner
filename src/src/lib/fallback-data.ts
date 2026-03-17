@@ -130,3 +130,110 @@ export const hypotheekParameters = {
   overdrachtsbelastingBeleggers: 8, // percentage niet-woningen/beleggers (was 10,4% in 2025)
   hillenAftrekPercentage: 71.87, // Hillen-aftrek daalt jaarlijks
 };
+
+// === WONINGINRICHTING DATA ===
+
+// --- RAAMDECORATIE ---
+export interface RaamdecoratieProduct {
+  type: string;
+  beschrijving: string;
+  prijsVanPerM2: number;
+  prijsTotPerM2: number;
+  isolatiewaarde: 'Laag' | 'Gemiddeld' | 'Goed' | 'Zeer goed';
+  lichtregulatie: 'Beperkt' | 'Goed' | 'Zeer goed' | 'Volledig';
+  onderhoud: 'Laag' | 'Gemiddeld' | 'Hoog';
+  levensduur: number; // jaren
+  geschiktVoor: string[];
+}
+
+export const raamdecoratieProducten: RaamdecoratieProduct[] = [
+  { type: 'Rolgordijnen', beschrijving: 'Strak en modern design, eenvoudig bedienbaar. Beschikbaar in verduisterende of lichtdoorlatende varianten.', prijsVanPerM2: 25, prijsTotPerM2: 80, isolatiewaarde: 'Laag', lichtregulatie: 'Goed', onderhoud: 'Laag', levensduur: 10, geschiktVoor: ['Slaapkamer', 'Woonkamer', 'Kantoor'] },
+  { type: 'Jaloezieën (hout)', beschrijving: 'Klassieke horizontale lamellen van echt hout. Goede lichtregulatie en warmte-isolatie.', prijsVanPerM2: 60, prijsTotPerM2: 150, isolatiewaarde: 'Gemiddeld', lichtregulatie: 'Zeer goed', onderhoud: 'Gemiddeld', levensduur: 15, geschiktVoor: ['Woonkamer', 'Slaapkamer', 'Studeerkamer'] },
+  { type: 'Jaloezieën (aluminium)', beschrijving: 'Moderne aluminium lamellen, vochtbestendig en onderhoudsvriendelijk.', prijsVanPerM2: 30, prijsTotPerM2: 75, isolatiewaarde: 'Laag', lichtregulatie: 'Zeer goed', onderhoud: 'Laag', levensduur: 12, geschiktVoor: ['Badkamer', 'Keuken', 'Kantoor'] },
+  { type: 'Shutters', beschrijving: 'Luxe binnenluiken met verstelbare lamellen. Duurzaam, isolerend en waardeverhoging voor je woning.', prijsVanPerM2: 200, prijsTotPerM2: 450, isolatiewaarde: 'Zeer goed', lichtregulatie: 'Zeer goed', onderhoud: 'Laag', levensduur: 25, geschiktVoor: ['Woonkamer', 'Slaapkamer', 'Erkerraam'] },
+  { type: 'Plissé gordijnen', beschrijving: 'Flexibele geplooide stof, op maat gemaakt. Ideaal voor dakramen en bijzondere raamvormen.', prijsVanPerM2: 35, prijsTotPerM2: 100, isolatiewaarde: 'Goed', lichtregulatie: 'Goed', onderhoud: 'Laag', levensduur: 10, geschiktVoor: ['Dakraam', 'Serre', 'Draaikiepraam'] },
+  { type: 'Gordijnen (confectie)', beschrijving: 'Traditionele gordijnen in standaardmaten. Snel beschikbaar en betaalbaar.', prijsVanPerM2: 15, prijsTotPerM2: 50, isolatiewaarde: 'Gemiddeld', lichtregulatie: 'Goed', onderhoud: 'Hoog', levensduur: 8, geschiktVoor: ['Woonkamer', 'Slaapkamer'] },
+  { type: 'Gordijnen (op maat)', beschrijving: 'Op maat gemaakte gordijnen met premium stoffen. Perfecte pasvorm en luxe uitstraling.', prijsVanPerM2: 50, prijsTotPerM2: 200, isolatiewaarde: 'Goed', lichtregulatie: 'Goed', onderhoud: 'Hoog', levensduur: 12, geschiktVoor: ['Woonkamer', 'Slaapkamer', 'Eetkamer'] },
+  { type: 'Smart raambekleding', beschrijving: 'Elektrisch bedienbare rolgordijnen of plissés met app- of spraakbediening.', prijsVanPerM2: 80, prijsTotPerM2: 250, isolatiewaarde: 'Goed', lichtregulatie: 'Zeer goed', onderhoud: 'Laag', levensduur: 10, geschiktVoor: ['Woonkamer', 'Slaapkamer', 'Hele woning'] },
+];
+
+export interface RaamdecoratieAanbieder {
+  naam: string;
+  type: 'Budget' | 'Middenklasse' | 'Premium';
+  prijsniveau: 'Laag' | 'Gemiddeld' | 'Hoog';
+  opMaat: boolean;
+  montageService: boolean;
+  beoordeling: number;
+}
+
+export const raamdecoratieAanbieders: RaamdecoratieAanbieder[] = [
+  { naam: 'IKEA', type: 'Budget', prijsniveau: 'Laag', opMaat: false, montageService: false, beoordeling: 3.8 },
+  { naam: 'Kwantum', type: 'Budget', prijsniveau: 'Laag', opMaat: true, montageService: false, beoordeling: 3.7 },
+  { naam: 'Leen Bakker', type: 'Budget', prijsniveau: 'Laag', opMaat: true, montageService: false, beoordeling: 3.6 },
+  { naam: 'KARWEI', type: 'Middenklasse', prijsniveau: 'Gemiddeld', opMaat: true, montageService: true, beoordeling: 4.0 },
+  { naam: 'Praxis', type: 'Middenklasse', prijsniveau: 'Gemiddeld', opMaat: true, montageService: true, beoordeling: 3.9 },
+  { naam: 'Veneta', type: 'Premium', prijsniveau: 'Hoog', opMaat: true, montageService: true, beoordeling: 4.3 },
+  { naam: 'Jasno', type: 'Premium', prijsniveau: 'Hoog', opMaat: true, montageService: true, beoordeling: 4.5 },
+];
+
+// --- VLOEREN ---
+export interface VloerType {
+  type: string;
+  beschrijving: string;
+  prijsVanPerM2: number;
+  prijsTotPerM2: number;
+  levensduur: number;
+  geluidsdemping: 'Slecht' | 'Matig' | 'Goed' | 'Zeer goed';
+  vochtbestendig: boolean;
+  vloerverwarming: boolean;
+  onderhoud: 'Laag' | 'Gemiddeld' | 'Hoog';
+  duurzaamheid: 'Beperkt' | 'Gemiddeld' | 'Goed' | 'Zeer goed';
+  geschiktVoor: string[];
+}
+
+export const vloerTypen: VloerType[] = [
+  { type: 'PVC klik (SPC)', beschrijving: 'Waterdicht, stevig en eenvoudig te leggen. Populairste keuze in Nederland.', prijsVanPerM2: 20, prijsTotPerM2: 60, levensduur: 20, geluidsdemping: 'Goed', vochtbestendig: true, vloerverwarming: true, onderhoud: 'Laag', duurzaamheid: 'Goed', geschiktVoor: ['Woonkamer', 'Keuken', 'Badkamer', 'Hal'] },
+  { type: 'Laminaat', beschrijving: 'Betaalbaar en in veel designs beschikbaar. Niet geschikt voor vochtige ruimtes.', prijsVanPerM2: 10, prijsTotPerM2: 40, levensduur: 15, geluidsdemping: 'Matig', vochtbestendig: false, vloerverwarming: true, onderhoud: 'Laag', duurzaamheid: 'Gemiddeld', geschiktVoor: ['Woonkamer', 'Slaapkamer', 'Hal'] },
+  { type: 'Parket (massief)', beschrijving: 'Echt hout met karakter. Kan meerdere keren geschuurd worden voor een nieuw uiterlijk.', prijsVanPerM2: 60, prijsTotPerM2: 180, levensduur: 50, geluidsdemping: 'Goed', vochtbestendig: false, vloerverwarming: false, onderhoud: 'Hoog', duurzaamheid: 'Zeer goed', geschiktVoor: ['Woonkamer', 'Slaapkamer', 'Studeerkamer'] },
+  { type: 'Parket (meerlaags)', beschrijving: 'Toplaag van echt hout op een stabiele kern. Goed alternatief voor massief parket.', prijsVanPerM2: 40, prijsTotPerM2: 120, levensduur: 30, geluidsdemping: 'Goed', vochtbestendig: false, vloerverwarming: true, onderhoud: 'Gemiddeld', duurzaamheid: 'Goed', geschiktVoor: ['Woonkamer', 'Slaapkamer'] },
+  { type: 'Vinyl', beschrijving: 'Zacht, warm en geluidsdempend. Beschikbaar in rollen of tegels.', prijsVanPerM2: 15, prijsTotPerM2: 45, levensduur: 15, geluidsdemping: 'Zeer goed', vochtbestendig: true, vloerverwarming: true, onderhoud: 'Laag', duurzaamheid: 'Gemiddeld', geschiktVoor: ['Kinderkamer', 'Keuken', 'Badkamer'] },
+  { type: 'Gietvloer (PU)', beschrijving: 'Naadloze polyurethaan gietvloer. Modern, hygiënisch en onderhoudsarm.', prijsVanPerM2: 80, prijsTotPerM2: 150, levensduur: 25, geluidsdemping: 'Goed', vochtbestendig: true, vloerverwarming: true, onderhoud: 'Laag', duurzaamheid: 'Zeer goed', geschiktVoor: ['Woonkamer', 'Keuken', 'Badkamer', 'Kantoor'] },
+  { type: 'Tegels (keramisch)', beschrijving: 'Tijdloos, vochtbestendig en slijtvast. Beschikbaar in vele formaten en stijlen.', prijsVanPerM2: 25, prijsTotPerM2: 100, levensduur: 40, geluidsdemping: 'Slecht', vochtbestendig: true, vloerverwarming: true, onderhoud: 'Laag', duurzaamheid: 'Zeer goed', geschiktVoor: ['Badkamer', 'Keuken', 'Hal', 'Toilet'] },
+];
+
+// --- KOZIJNEN ---
+export interface KozijnType {
+  materiaal: string;
+  beschrijving: string;
+  prijsVanPerM2: number;
+  prijsTotPerM2: number;
+  uWaarde: number; // W/m²K - lager is beter
+  levensduur: number;
+  onderhoud: 'Laag' | 'Gemiddeld' | 'Hoog';
+  duurzaam: boolean;
+  kleurOpties: 'Beperkt' | 'Ruim' | 'Onbeperkt';
+  geschiktVoor: string[];
+}
+
+export const kozijnTypen: KozijnType[] = [
+  { materiaal: 'Kunststof (PVC)', beschrijving: 'Onderhoudsvriendelijk en betaalbaar. Meest populair in Nederland voor renovatie en nieuwbouw.', prijsVanPerM2: 200, prijsTotPerM2: 400, uWaarde: 1.3, levensduur: 40, onderhoud: 'Laag', duurzaam: true, kleurOpties: 'Ruim', geschiktVoor: ['Nieuwbouw', 'Renovatie', 'Appartementen'] },
+  { materiaal: 'Aluminium', beschrijving: 'Sterk, slank profiel en modern. Ideaal voor grote glasvlakken en schuifpuien.', prijsVanPerM2: 350, prijsTotPerM2: 700, uWaarde: 1.5, levensduur: 50, onderhoud: 'Laag', duurzaam: true, kleurOpties: 'Onbeperkt', geschiktVoor: ['Nieuwbouw', 'Grote ramen', 'Schuifpuien', 'Bedrijfsgebouwen'] },
+  { materiaal: 'Hout (hardhout)', beschrijving: 'Natuurlijke uitstraling en uitstekende isolatie. Vraagt regelmatig onderhoud.', prijsVanPerM2: 300, prijsTotPerM2: 600, uWaarde: 1.2, levensduur: 40, onderhoud: 'Hoog', duurzaam: true, kleurOpties: 'Onbeperkt', geschiktVoor: ['Monumenten', 'Herenhuizen', 'Villabouw'] },
+  { materiaal: 'Hout-aluminium', beschrijving: 'Combinatie van hout binnen en aluminium buiten. Optimale isolatie met minimaal onderhoud.', prijsVanPerM2: 450, prijsTotPerM2: 900, uWaarde: 1.0, levensduur: 50, onderhoud: 'Laag', duurzaam: true, kleurOpties: 'Onbeperkt', geschiktVoor: ['Nieuwbouw', 'Renovatie', 'Energielabel verbetering'] },
+];
+
+export interface KozijnAanbieder {
+  naam: string;
+  type: 'Budget' | 'Middenklasse' | 'Premium';
+  materialen: string[];
+  beoordeling: number;
+}
+
+export const kozijnAanbieders: KozijnAanbieder[] = [
+  { naam: 'Schüco', type: 'Premium', materialen: ['Aluminium', 'Kunststof'], beoordeling: 4.5 },
+  { naam: 'Reynaers', type: 'Premium', materialen: ['Aluminium'], beoordeling: 4.4 },
+  { naam: 'Deceuninck', type: 'Middenklasse', materialen: ['Kunststof'], beoordeling: 4.1 },
+  { naam: 'Heroal', type: 'Middenklasse', materialen: ['Aluminium', 'Kunststof'], beoordeling: 4.0 },
+  { naam: 'Velux', type: 'Premium', materialen: ['Hout', 'Kunststof', 'Aluminium'], beoordeling: 4.6 },
+  { naam: 'Belisol', type: 'Middenklasse', materialen: ['Kunststof', 'Aluminium', 'Hout'], beoordeling: 4.2 },
+];

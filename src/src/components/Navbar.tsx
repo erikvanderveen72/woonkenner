@@ -9,6 +9,9 @@ const navItems = [
   { label: 'Energie', href: '/energie' },
   { label: 'Huurprijzen', href: '/huurprijzen' },
   { label: 'Verduurzaming', href: '/verduurzaming' },
+  { label: 'Raamdecoratie', href: '/raamdecoratie' },
+  { label: 'Vloeren', href: '/vloeren' },
+  { label: 'Kozijnen', href: '/kozijnen' },
 ];
 
 export default function Navbar() {
