@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { Lock, Shield, RefreshCw } from 'lucide-react';
 
 const columns = [
-  { title: 'Hypotheek', links: [{ label: 'Hypotheek Vergelijken', href: '/hypotheek' }, { label: 'Rente Calculator', href: '/hypotheek#calculator' }, { label: 'NHG Informatie', href: '/hypotheek#nhg' }] },
-  { title: 'Woning', links: [{ label: 'Woningwaarde Bepalen', href: '/woningwaarde' }, { label: 'Huurprijzen Checken', href: '/huurprijzen' }, { label: 'Woningmarkt 2026', href: '/woningwaarde#markt' }] },
-  { title: 'Energie', links: [{ label: 'Energielabel', href: '/energie' }, { label: 'Verduurzaming', href: '/verduurzaming' }, { label: 'Subsidies 2026', href: '/verduurzaming#subsidies' }] },
+  { title: 'Hypotheek & Woning', links: [{ label: 'Hypotheek Vergelijken', href: '/hypotheek' }, { label: 'Woningwaarde Bepalen', href: '/woningwaarde' }, { label: 'Huurprijzen Checken', href: '/huurprijzen' }] },
+  { title: 'Energie & Verduurzaming', links: [{ label: 'Energielabel', href: '/energie' }, { label: 'Verduurzaming', href: '/verduurzaming' }, { label: 'Kozijnen', href: '/kozijnen' }] },
+  { title: 'Woninginrichting', links: [{ label: 'Raamdecoratie', href: '/raamdecoratie' }, { label: 'Vloeren Vergelijken', href: '/vloeren' }, { label: 'Kozijnen Vergelijken', href: '/kozijnen' }] },
   { title: 'Over Woonkenner', links: [{ label: 'Over Ons', href: '#' }, { label: 'Privacy', href: '#' }, { label: 'Disclaimer', href: '#' }] },
 ];
 
