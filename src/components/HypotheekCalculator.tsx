@@ -18,9 +18,13 @@ export function HypotheekCalculator() {
     }[rentevastperiode] || '4.12'
   );
 
+  // In Nederland is de hypotheeklooptijd altijd 30 jaar.
+  // De rentevaste periode bepaalt alleen hoe lang de rente vaststaat, niet de aflostermijn.
+  const looptijd = 30;
+
   const berekening = useMemo(() => {
-    return berekenHypotheek(woningprijs, rente, parseInt(rentevastperiode), isStarter);
-  }, [woningprijs, rente, rentevastperiode, isStarter]);
+    return berekenHypotheek(woningprijs, rente, looptijd, isStarter);
+  }, [woningprijs, rente, looptijd, isStarter]);
 
   const resultContent = (
     <div className="space-y-6">
@@ -29,12 +33,12 @@ export function HypotheekCalculator() {
         <p className="text-3xl md:text-4xl font-bold text-primary">
           €{formatCurrency(berekening.maandlasten)}
         </p>
-        <p className="text-xs text-text-muted mt-1">per maand (incl. rente)</p>
+        <p className="text-xs text-text-muted mt-1">per maand (annuïtair, 30 jaar looptijd)</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <p className="text-xs text-text-muted font-medium mb-1">Totale Kosten</p>
+          <p className="text-xs text-text-muted font-medium mb-1">Totale Kosten (30 jr)</p>
           <p className="text-xl font-bold text-stone-900">
             €{formatCurrency(berekening.totaleKosten)}
           </p>
@@ -125,8 +129,9 @@ export function HypotheekCalculator() {
         {/* Info Box */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <p className="text-xs text-blue-900 font-medium">
-            💡 Hint: Aanpassingen worden direct berekend. Alle bedragen zijn voorbeelden gebaseerd op huidige
-            rentes.
+            💡 De looptijd van een hypotheek in Nederland is standaard 30 jaar. De rentevaste periode bepaalt
+            hoe lang je rente vaststaat. Na afloop van die periode krijg je een nieuw renteaanbod. Bedragen zijn
+            indicatief op basis van huidige rentes.
           </p>
         </div>
       </div>
