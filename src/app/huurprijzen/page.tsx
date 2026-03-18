@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const liberalisatiegrens = 879.66;
+const liberalisatiegrens = 932.93;
 
 const faqItems = [
   {

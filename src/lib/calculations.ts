@@ -86,16 +86,16 @@ export function berekenEnergiebesparing(
 
 export function berekenMaxHuurprijs(punten: number): { maxHuur: number; sector: string } {
   // Woningwaarderingsstelsel 2026 - vereenvoudigd
-  if (punten <= 148) {
-    // Sociale huur: max ~€879,66
-    const maxHuur = Math.min(round(punten * 5.94), 879.66);
+  // Grenzen per 1 jan 2026: sociaal t/m 143 punten (€932,93), midden 144-186 (€1.228,07)
+  const prijsPerPunt = 6.52; // ~€932,93 / 143 punten
+  if (punten <= 143) {
+    const maxHuur = Math.min(round(punten * prijsPerPunt), 932.93);
     return { maxHuur, sector: 'Sociale huur' };
   } else if (punten <= 186) {
-    // Middenhuur (Wet betaalbare huur 2024)
-    const maxHuur = round(punten * 5.94);
+    const maxHuur = Math.min(round(punten * prijsPerPunt), 1228.07);
     return { maxHuur, sector: 'Middenhuur (gereguleerd)' };
   } else {
-    const maxHuur = round(punten * 5.94);
+    const maxHuur = round(punten * prijsPerPunt);
     return { maxHuur, sector: 'Vrije sector' };
   }
 }

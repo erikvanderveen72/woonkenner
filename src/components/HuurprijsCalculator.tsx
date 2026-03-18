@@ -44,7 +44,7 @@ export default function HuurprijsCalculator() {
 
       <div className={`rounded-lg border p-4 ${sectorColor}`}>
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-medium">Sektor</span>
+          <span className="text-sm font-medium">Sector</span>
           <span className={`text-xs font-semibold px-2 py-1 rounded ${sectorBadgeColor}`}>
             {berekening.sector}
           </span>
@@ -160,7 +160,7 @@ export default function HuurprijsCalculator() {
         {/* Info Box */}
         <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
           <p className="text-xs text-blue-700">
-            💡 <strong>Tip:</strong> Als je punten verschuift, zie je hoe het je maximale huurprijs en sektor beïnvloedt. Een woningtype met meer punten kan duurder zijn.
+            💡 <strong>Tip:</strong> Als je punten verschuift, zie je hoe het je maximale huurprijs en sector beïnvloedt. Een woningtype met meer punten kan duurder zijn.
           </p>
         </div>
       </div>

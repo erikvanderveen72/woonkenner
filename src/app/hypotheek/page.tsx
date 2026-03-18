@@ -45,7 +45,7 @@ export default function HypotheekPage() {
                 <tbody className="divide-y divide-border">
                   <tr className="hover:bg-surface transition-colors">
                     <td className="px-6 py-4 text-sm text-stone-900 font-medium">NHG Grens</td>
-                    <td className="px-6 py-4 text-sm text-stone-700">€435.000</td>
+                    <td className="px-6 py-4 text-sm text-stone-700">€470.000</td>
                   </tr>
                   <tr className="hover:bg-surface transition-colors">
                     <td className="px-6 py-4 text-sm text-stone-900 font-medium">Max LTV</td>
@@ -53,11 +53,11 @@ export default function HypotheekPage() {
                   </tr>
                   <tr className="hover:bg-surface transition-colors">
                     <td className="px-6 py-4 text-sm text-stone-900 font-medium">NHG Premie</td>
-                    <td className="px-6 py-4 text-sm text-stone-700">0,6% van hypotheekbedrag</td>
+                    <td className="px-6 py-4 text-sm text-stone-700">0,4% van hypotheekbedrag</td>
                   </tr>
                   <tr className="hover:bg-surface transition-colors">
                     <td className="px-6 py-4 text-sm text-stone-900 font-medium">Overdrachtsbelasting Starters</td>
-                    <td className="px-6 py-4 text-sm text-stone-700">0% (onder 35 jaar)</td>
+                    <td className="px-6 py-4 text-sm text-stone-700">0% (onder 35 jaar, woning tot €555.000)</td>
                   </tr>
                   <tr className="hover:bg-surface transition-colors">
                     <td className="px-6 py-4 text-sm text-stone-900 font-medium">Overdrachtsbelasting Normaal</td>
@@ -146,7 +146,7 @@ export default function HypotheekPage() {
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-stone-900 mb-2">NHG Voordelen</h3>
                   <p className="text-sm text-stone-600">
-                    Voor woningen tot €435.000. Betere rente, lagere kosten en zekerheid bij terugleveringen.
+                    Voor woningen tot €470.000. Betere rente, lagere kosten en zekerheid bij terugleveringen.
                   </p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function HypotheekPage() {
               <div className="px-6 py-4 border-t border-border bg-surface text-sm text-stone-700">
                 <p>
                   NHG staat voor Nationale Hypotheek Garantie. Dit is een garantie van de overheid op
-                  hypotheken tot €435.000. Voordelen: lagere rente, betere voorwaarden, en je bent verzekerd
+                  hypotheken tot €470.000. Voordelen: lagere rente, betere voorwaarden, en je bent verzekerd
                   tegen waardedaling van de woning.
                 </p>
               </div>
