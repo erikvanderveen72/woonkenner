@@ -223,9 +223,12 @@ export default function HomePage() {
               Start vergelijking
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <button className="inline-flex items-center justify-center rounded-lg border-2 border-stone-300 px-8 py-3 font-semibold text-stone-300 transition-all hover:bg-stone-300/10 hover:text-white">
+            <Link
+              href="#vergelijkingen"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-stone-300 px-8 py-3 font-semibold text-stone-300 transition-all hover:bg-stone-300/10 hover:text-white"
+            >
               Hoe werkt het?
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -256,7 +259,7 @@ export default function HomePage() {
       </section>
 
       {/* Popular Topics Grid */}
-      <section className="bg-stone-50 py-16 sm:py-20">
+      <section id="vergelijkingen" className="bg-stone-50 py-16 sm:py-20 scroll-mt-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-4xl font-bold text-stone-900">
