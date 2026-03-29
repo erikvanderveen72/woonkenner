@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Woning Verduurzamen 2026 - Subsidies & Kosten | Woonkenner.nl',
   description: 'Ontdek verduurzamingsmaatregelen, bereken je besparing en check de ISDE subsidies 2026. Dakisolatie, zonnepanelen, warmtepomp en meer.',
   keywords: ['verduurzaming', 'ISDE subsidie', 'zonnepanelen', 'warmtepomp', 'energiebesparing', 'subsidie 2026'],
+  alternates: { canonical: '/verduurzaming' },
   openGraph: {
     title: 'Woning Verduurzamen 2026 - Subsidies & Kosten',
     description: 'Ontdek verduurzamingsmaatregelen en bereken je besparing met de ISDE subsidie.',

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://woonkenner.nl'),
   openGraph: { type: 'website', locale: 'nl_NL', url: 'https://woonkenner.nl', siteName: 'Woonkenner.nl', images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Woonkenner.nl - Jouw Gids voor Wonen in Nederland' }] },
   twitter: { card: 'summary_large_image', images: ['/og-image.png'] },
-  alternates: { canonical: 'https://woonkenner.nl', languages: { 'nl-NL': 'https://woonkenner.nl' } },
+  alternates: { languages: { 'nl-NL': 'https://woonkenner.nl' } },
   robots: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large' as const },
   verification: {
     google: 'jpxAgd0ANUWBGqt8OQ0BnfswLXhUF4RbJ5mBgudpiDo',

@@ -7,6 +7,7 @@ import { energielabels } from '@/lib/fallback-data';
 export const metadata: Metadata = {
   title: 'Energielabel Woning 2026 - Kosten & Besparing | Woonkenner.nl',
   description: 'Ontdek wat je energielabel betekent. Vergelijk energiekosten per label, bereken besparing bij verduurzaming en lees tips voor lagere energiekosten.',
+  alternates: { canonical: '/energie' },
 };
 
 export const revalidate = 3600;

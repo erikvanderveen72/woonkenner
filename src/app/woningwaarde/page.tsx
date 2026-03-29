@@ -7,6 +7,7 @@ import FAQSchema from '@/components/FAQSchema';
 export const metadata: Metadata = {
   title: 'Woningwaarde Bepalen 2026 - Gratis Schatting | Woonkenner.nl',
   description: 'Bepaal de waarde van jouw woning in 2026. Gratis woningwaarde calculator met actuele prijzen uit Q1 2026 voor alle regio\'s in Nederland.',
+  alternates: { canonical: '/woningwaarde' },
 };
 
 export const revalidate = 3600;

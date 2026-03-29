@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   title: 'Woonkenner.nl - Vergelijk Hypotheken, Woningwaarde & Energie 2026',
   description:
     'Het onafhankelijke platform voor woonvergelijkingen. Vergelijk hypotheken, woningwaarde en energiekosten. Bespaar slim op je woonkosten.',
+  alternates: { canonical: '/' },
 };
 
 export const revalidate = 60;

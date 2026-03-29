@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Vloeren Vergelijken 2026 - PVC, Laminaat, Parket & Meer',
   description: 'Vergelijk vloertypen: PVC, laminaat, parket, vinyl, gietvloer en tegels. Prijzen per m², levensduur, vochtbestendigheid en vloerverwarming.',
   keywords: ['vloeren vergelijken', 'PVC vloer', 'laminaat', 'parket', 'vinyl vloer', 'gietvloer', 'vloerverwarming'],
+  alternates: { canonical: '/vloeren' },
   openGraph: {
     title: 'Vloeren Vergelijken 2026 - PVC, Laminaat, Parket & Meer',
     description: 'Vergelijk alle vloertypen op prijs, levensduur en geschiktheid.',

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Raamdecoratie Vergelijken 2026 - Gordijnen, Shutters & Jaloezieën',
   description: 'Vergelijk raamdecoratie: gordijnen, jaloezieën, shutters, plissé en rolgordijnen. Prijzen, isolatiewaarde en aanbieders. Onafhankelijk advies.',
   keywords: ['raamdecoratie', 'gordijnen', 'jaloezieën', 'shutters', 'plissé gordijnen', 'rolgordijnen', 'raambekleding vergelijken'],
+  alternates: { canonical: '/raamdecoratie' },
   openGraph: {
     title: 'Raamdecoratie Vergelijken 2026 - Gordijnen, Shutters & Jaloezieën',
     description: 'Vergelijk alle soorten raamdecoratie op prijs, isolatie en onderhoud.',

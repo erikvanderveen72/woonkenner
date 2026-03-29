@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Kozijnen Vergelijken 2026 - Kunststof, Aluminium & Hout',
   description: 'Vergelijk kozijnen: kunststof, aluminium, hout en hout-aluminium. Prijzen, U-waarden, isolatie en aanbieders. Onafhankelijk advies.',
   keywords: ['kozijnen vergelijken', 'kunststof kozijnen', 'aluminium kozijnen', 'houten kozijnen', 'kozijnen prijs', 'U-waarde kozijnen'],
+  alternates: { canonical: '/kozijnen' },
   openGraph: {
     title: 'Kozijnen Vergelijken 2026 - Kunststof, Aluminium & Hout',
     description: 'Vergelijk alle kozijnmaterialen op prijs, isolatie en levensduur.',

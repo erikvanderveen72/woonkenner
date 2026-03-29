@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Hypotheek Vergelijken 2026 - Rentes en Aanbieders | Woonkenner.nl",
   description:
     "Vergelijk hypotheken van 8+ aanbieders en vind de beste rente. Hypotheek calculator, NHG voordelen, en tips voor huizenkoper. 2026 actueel.",
+  alternates: { canonical: '/hypotheek' },
 };
 
 const breadcrumbs = [
